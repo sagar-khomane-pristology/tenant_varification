@@ -48,9 +48,9 @@
     <!-- Logo -->
     <a href="javascript:void(0);" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>Ten</b>ent</span>
+      <span class="logo-mini"><b>Ten</b>ant</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Tenent</b> Verification</span>
+      <span class="logo-lg"><b>Tenant</b> Verification</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-fixed-top">
