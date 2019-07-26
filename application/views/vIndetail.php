@@ -6,8 +6,98 @@
   <title><?php echo $title;?></title>
   
   <?php $this->load->view('header.php');?>
+  <style>
   
+	
+	
+	
+	#myImgzoom {
+	  border-radius: 5px;
+	  cursor: pointer;
+	  transition: 0.3s;
+	}
 
+	#myImgzoom:hover {opacity: 0.7;}
+
+	/* The Modal (background) */
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 2; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+	  margin: auto;
+	  display: block;
+	  width: 80%;
+	  max-width: 700px;
+	}
+
+	/* caption_zoom of Modal Image */
+	#caption_zoom {
+	  margin: auto;
+	  display: block;
+	  width: 80%;
+	  max-width: 700px;
+	  text-align: center;
+	  color: #ccc;
+	  padding: 10px 0;
+	  height: 150px;
+	}
+
+	/* Add Animation */
+	.modal-content, #caption {  
+	  -webkit-animation-name: zoom;
+	  -webkit-animation-duration: 0.6s;
+	  animation-name: zoom;
+	  animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+	  from {-webkit-transform:scale(0)} 
+	  to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes zoom {
+	  from {transform:scale(0)} 
+	  to {transform:scale(1)}
+	}
+
+	/* The close_model Button */
+	.close_model {
+	  position: relative;
+	  top: 0px;
+	  right: 570px;
+	  color: #f1f1f1;
+	  font-size: 40px;
+	  font-weight: bold;
+	  transition: 0.3s;
+	}
+
+	.close_model:hover,
+	.close_model:focus {
+	  color: #bbb;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px){
+	  .modal-content {
+		width: 100%;
+	  }
+	}
+
+  </style>
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -28,7 +118,7 @@
           <!-- general form elements -->
           <div class="box box-warning">
             <div class="box-header with-border">
-              <h3 class="box-title stud-reg-form-heading">Student Information</h3>
+              <h3 class="box-title stud-reg-form-heading">Owner Details:</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -37,7 +127,7 @@
 			  <div class="row">
 				<div class="col-xm-12 col-sm-12 col-md-3 col-lg-3">
 					<div class="form-group">
-					  <label for="exampleInputtext1">First Name*</label>
+					  <label for="exampleInputtext1">First Name</label>
 					  <input type="text" class="form-control" id="first_name" name="student_fname" placeholder="first name">
 					</div>
 				</div>
@@ -49,10 +139,55 @@
 				</div>
 				<div class="col-xm-12 col-sm-12 col-md-3 col-lg-3">
 					<div class="form-group">
-					  <label for="exampleInputtext1">Last Name*</label>
+					  <label for="exampleInputtext1">Last Name</label>
 					  <input type="text" class="form-control" id="last_name" name="student_lname" placeholder="last name">
 					</div>
 				</div>
+				
+				<div class="col-xm-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="form-group">
+					  <label for="exampleInputtext1">Permenant Address</label>
+					  <textarea class="form-control" id="permanent_address" name="permanent_address" placeholder="Permenant Address"></textarea>
+					</div>
+				</div>
+				
+				<div class="col-xm-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="form-group">
+					  <label for="exampleInputtext1">Pin Code</label>
+					  <input type="text" class="form-control" id="pin_code" name="pin_code" placeholder="Pincode">
+					</div>
+				</div>
+				
+				<div class="col-xm-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="form-group">
+					  <label for="exampleInputtext1">Contact Number</label>
+					  <input type="text" class="form-control" id="contactnumber" name="contactnumber" maxlength="10" placeholder="Contact Number">
+					</div>
+				</div>
+				
+				<div class="col-xm-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="form-group">
+					  <label for="exampleInputtext1">Email Id</label>
+					  <input type="email" class="form-control" id="email" name="email" placeholder="Email Id">
+					</div>
+				</div>	
+
+				<div class="col-xm-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="form-group">
+					  <label for="exampleInputtext1">Aadhar Number</label>
+					 <input type="text" class="form-control" name="aadhar_number" id="aadhar_number" placeholder="312383639879">
+					</div>
+				</div>
+				
+				<div class="col-xm-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="form-group">
+					  <label for="exampleInputtext1">Owner photo</label>
+						<div class="img-rectangle">
+							<img id="myImgzoom" src="http://192.168.1.194/tenant_verification/assets/dist/img/user2-160x160.png" alt="owner photo">
+						</div>
+					</div>
+				</div>
+				
 				<div class="col-xm-12 col-sm-12 col-md-3 col-lg-3">
 					<div class="form-group">
 					  <label for="exampleInputtext1">Gender*</label>
@@ -914,155 +1049,20 @@
   </div>
   <!-- /.content-wrapper -->
   
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Student Information</h4>
-        </div>
-        <div class="modal-body">
-         
-			  <div class="row">
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Name</label>
-    				<input type="text" class="form-control" id="studentName">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Gender</label>
-    				<input type="text" class="form-control" id="gender">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Date Of Birth</label>
-    				<input type="text" class="form-control" id="dob">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Birth Place</label>
-    				<input type="text" class="form-control" id="birthPlace">
-					</div>
-				</div>
-			  </div>
-			  <div class="row">
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Height</label>
-    				<input type="text" class="form-control" id="studHeight">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Weight</label>
-    				<input type="text" class="form-control" id="studWeight">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Blood Group</label>
-    				<input type="text" class="form-control" id="studBloodGroup">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Student Identity</label>
-    				<input type="text" class="form-control" id="studIdentity">
-					</div>
-				</div>
-			  </div>
-			  <div class="row">
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">UID</label>
-    				<input type="text" class="form-control" id="studUID">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Area Of Interest</label>
-    				<input type="text" class="form-control" id="studAreaOfInterest">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Permanent Address</label>
-    				<input type="text" class="form-control" id="studPermanentAddress">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Current Address</label>
-    				<input type="text" class="form-control" id="studCurrentAddress">
-					</div>
-				</div>
-			  </div>
-			  <div class="row">
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Contact No 1</label>
-    				<input type="text" class="form-control" id="studContactNo1">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Contact No 2</label>
-    				<input type="text" class="form-control" id="studContactNo2">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Religion</label>
-    				<input type="text" class="form-control" id="studReligion">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Cast</label>
-    				<input type="text" class="form-control" id="studCast">
-					</div>
-				</div>
-			  </div>
-			  <div class="row">
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Mother Tounge</label>
-    				<input type="text" class="form-control" id="studMotherTounge">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Father Name</label>
-    				<input type="text" class="form-control" id="studFatherName">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Father Qualification</label>
-    				<input type="text" class="form-control" id="studFatherQualification">
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 ">
-					<div class="form-group">
-					<label for="email">Father Occupation</label>
-    				<input type="text" class="form-control" id="studFatherOccupation">
-					</div>
-				</div>
-			  </div>
-			  
-			  <div class="modal-footer">
-          		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-       		  </div>
-		  </div>
-        </div>
-        
-      </div>
-    </div>
+   
+	
+	
+	
+	<!-- The Modal for view full size image -->
+	<div id="myModal_zoom" class="modal">
+	  <span class="close_model close ">&times;</span>
+	  <img class="modal-content" id="img01_zoom">
+	  <div id="caption_zoom"></div>
+	</div>
+	
+	
+	
+	
   </div>
 
 
@@ -1071,17 +1071,28 @@
 <script>
 $( document ).ready(function() {
 $("#dashboard").removeClass('active');
-$("#unverified-request").addClass('active');
+$("#ss").addClass('active');
 });
-	
-function showStudentDetails(id)
-{
-	$('#myModal').modal('show');
-	$("#studentName").val(id);
-	$("#gender").val(id);
-	$("#dob").val(id);
-	$("#birthPlace").val(id);
+ 
+// Get the modal
+var modal = document.getElementById("myModal_zoom");
+// Get the image and insert it inside the modal - use its "alt" text as a caption_zoom
+var img = document.getElementById("myImgzoom");
+var modalImg = document.getElementById("img01_zoom");
+var captionText = document.getElementById("caption_zoom");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
 }
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close_model")[0];
+// When the user clicks on <span> (x), close_model the modal
+span.onclick = function() { 
+var modal = document.getElementById("myModal_zoom");
+  modal.style.display = "none";
+}
+
 </script>
  
 </body>
