@@ -1,3 +1,4 @@
+ <div class="backdrop1"></div>
  <!--<footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
@@ -5,12 +6,14 @@
     <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
     reserved.
   </footer>-->
+  
 
    
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
+  
 </div>
 <!-- ./wrapper -->
 
@@ -63,6 +66,16 @@
 
 
 <script>
+
+$(document).ready(function(){
+    $(".dropdown").on('shown.bs.dropdown', function () {
+        $(".backdrop1").show();
+    });
+	$(".dropdown").on('hidden.bs.dropdown', function () {
+        $(".backdrop1").hide();
+    });
+});
+
   $(function () {
     $('#example1').DataTable()
     $('#example2').DataTable({
@@ -74,4 +87,6 @@
       'autoWidth'   : false
     })
   })
+  
+  
 </script>
