@@ -212,14 +212,17 @@ class Login extends CI_Controller {
 	 
 	public function profile()
 	{
-		if(@$_SESSION['is_logged_in']<1)
-		{
-			redirect('Login/','refresh');
-		}else{
+		// if(@$_SESSION['is_logged_in']<1)
+		// {
+			// redirect('Login/','refresh');
+		// }else{
+			// $data['title'] = "Profile | Tenant Verification"; 
+            // $data['main'] ="profile";
+			// $this->load->view('profile',$data);
+		// }
 			$data['title'] = "Profile | Tenant Verification"; 
             $data['main'] ="profile";
 			$this->load->view('profile',$data);
-		}
     }
 	
 	public function editProfile()
