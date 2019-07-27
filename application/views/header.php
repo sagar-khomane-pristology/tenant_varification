@@ -254,14 +254,16 @@
             </ul>
           </li>-->
           <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
+		  <li class="dropdown user user-menu">
+			<a href="<?php echo base_url();?>Login/logout">Sign out</a>
+		  </li>
+          <!--<li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?php echo base_url().'assets/dist/img/user2-160x160.png';?>" class="user-image" alt="User Image" onerror="this.src='<?php echo base_url().'assets/dist/img/user2-160x160.png';?>'">
 																					
               <span class="hidden-xs"> <?php echo "admin"." "."admin"; ?></span>
             </a>
             <ul class="dropdown-menu">
-              <!-- User image -->
               <li class="user-header">
                 <img src="<?php echo base_url().'assets/dist/img/user2-160x160.png';?>" class="img-circle" alt="User Image" onerror="this.src='<?php echo base_url().'assets/dist/img/user2-160x160.png';?>'">
 																					
@@ -269,7 +271,6 @@
                 </p>
               </li>
               
-              <!-- Menu Footer-->
               <li class="user-footer">
                <div class="pull-left">
                   <a href="<?php echo base_url();?>Login/profile" class="btn btn-default btn-flat">Profile</a>
@@ -279,7 +280,7 @@
                 </div>
               </li>
             </ul>
-          </li>
+          </li>-->
           <!-- Control Sidebar Toggle Button -->
           
         </ul>

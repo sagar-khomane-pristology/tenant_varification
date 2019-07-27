@@ -1281,7 +1281,7 @@ a:focus {
 }
 
 .navbar-nav>.user-menu>.dropdown-menu>.user-footer {
-    background-color: #000;
+    background-color: #193651;
     padding: 10px
 }
 
@@ -5878,3 +5878,6 @@ input[type=radio] {
 	   z-index:100;
 	   display: none;
 	}
+.text-white{
+	color: #ffffff !important;
+}
