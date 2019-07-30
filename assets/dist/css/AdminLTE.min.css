@@ -5903,6 +5903,7 @@ input[type=radio] {
 
 .text-margin-right{
 	margin-left: 22px;
+	line-height: 22px;
 }
 .right-border{
 	border-right: 1px solid #dedbdb;
@@ -5916,4 +5917,10 @@ input[type=radio] {
 }
 .profile-table-custom>tbody>tr>th{
 	border-top: 0px solid #f4f4f4;
+}
+.box-height-change{
+	height: 470px;
+}
+.color-org{
+	color: #f16051;
 }
