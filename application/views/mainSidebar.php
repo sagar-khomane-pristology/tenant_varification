@@ -8,8 +8,8 @@
           <img src="<?php echo base_url().'assets/dist/img/user2-160x160.png';?>" class="img-circle" alt="User Image" onerror="this.src='<?php echo base_url().'assets/dist/img/user2-160x160.png';?>'">
         </div>
         <div class="pull-left info">
-          <p><a class="text-white" href="#"><?php echo "admin"." "."admin";?></a></p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <p><a class="text-white" href="<?php echo base_url();?>Login/profile"><?php echo "admin"." "."admin";?></a></p>
+          <a href="<?php echo base_url();?>Login/profile"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
 	   <!-- Sidebar Menu -->  
