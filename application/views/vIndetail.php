@@ -38,18 +38,19 @@
 						
 						<div class="box-body">
 							<div class="row">
-								<div class="col-md-2 col-lg-2 col-xs-6 col-sm-6">
-									<div class="row">
+							<div class="back-color1">
+								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+									<div class="row text-center">
 									<img class="profile-img-photo" id="myImgzoom" src="../../assets/dist/img/sample.png" alt="owner photo">
 									</div>
-									<div class="row">
-									 <span class="text-margin-right">absc dhh nanna</span><br>
+									<div class="row text-center">
+									 <span class="text-margin-right"><b>absc dhh nanna</b></span><br>
 									 <span class="text-margin-right">addjk.dsadsa21@gmail.com</span><br>
 									 <span class="text-margin-right">+91989898998</span>
 									</div>
 								</div>
-								<div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
-									<table class="table table-align-left profile-table-custom right-border">
+								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+									<table class="table table-align-left profile-table-custom ">
 									<tr>
 										<td style="word-break: break-all;"><b>Permenant Address</b><br>350 sadashive peth, pune 411000. near swargate 411404, 411411</td>
 									</tr>
@@ -57,11 +58,12 @@
 										<td><b>Birthday</b><br>1st-january-2019</td>
 									</tr>
 									<tr>
-										<td><b>Adhaar Number</b><br>524556451265 <button type="button" class="btn btn-default btn-xs"><i class="fa fa-download"></i></button></td>
+										<td><b>Adhaar Number</b><br>524556451265 <button type="button" class="btn btn-default btn-xs">Download&nbsp;<i class="fa fa-download color-org"></i></button></td>
 									</tr>
 									 
 									</table>
 								</div>
+							</div>
 								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 									<table class="table table-align-left profile-table-custom">
 									<tr>
@@ -90,10 +92,10 @@
 									</tr>
 									
 									<tr>
-										<td><b>Property Rent Agreement/Light Bill/ Water Bill Photo</b><br>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default btn-xs"><i class="fa fa-download"></i></button></td>
+										<td><b>Property Rent Agreement/Light Bill/ Water Bill Photo</b><br>&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default btn-xs">Download&nbsp;<i class="fa fa-download color-org"></i></button></td>
 									</tr>
 									<tr>
-										<td><b>Society NOC photo</b> &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default btn-xs"><i class="fa fa-download"></i></button></td>
+										<td><b>Society NOC photo</b> &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default btn-xs">Download&nbsp;<i class="fa fa-download color-org"></i></button></td>
 									</tr>
 									 
 									</table>
@@ -109,21 +111,21 @@
 					<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
 					<div class="box box-no-border">
 					<div class="box-header with-border">
-							<h4>Tenant Details:</h4>
+							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"><h4>Tenant Details:</h4></div>
 						</div>
 						<div class="box-body">
 							<div class="row">
-								<div class="col-md-2 col-lg-2 col-xs-6 col-sm-6">
-									<div class="row">
+								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+									<div class="row text-center">
 									<img class="profile-img-photo" id="myImgzoom" src="../../assets/dist/img/sample.png" alt="owner photo">
 									</div>
-									<div class="row">
-									 <span class="text-margin-right">Rohit Jadhav</span><br>
+									<div class="row text-center">
+									 <span class="text-margin-right"><b>Rohit Jadhav</b></span><br>
 									 <span class="text-margin-right">tenant@ga.com</span><br>
 									 <span class="text-margin-right">+919850505050</span>
 									</div>
 								</div>
-								<div class="col-md-4 col-lg-4 col-xs-6 col-sm-6">
+								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
 									<table class="table table-align-left profile-table-custom">
 									<tr>
 										<td style="word-break: break-all;"><b>Permenant Address</b><br>350 sadashive peth, pune 411000. near swargate 411404., </td>
@@ -132,7 +134,7 @@
 										<td><b>Date of birth</b><br>27-10-2019</td>
 									</tr>
 									<tr>
-										<td><b>Adhaar Number</b><br>524556451265 <button type="button" class="btn btn-default btn-xs"><i class="fa fa-download"></i></button></td>
+										<td><b>Adhaar Number</b><br>524556451265 <button type="button" class="btn btn-default btn-xs">Download&nbsp;<i class="fa fa-download color-org"></i></button></td>
 									</tr>
 									<tr>
 										<td><b>Vehicle Number</b><br>MH 12 AD 5555</td>
@@ -192,14 +194,14 @@
 					<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
 					<div class="box box-no-border">
 					<div class="box-header with-border">
-							<h4>Tenant child Details:</h4>
+							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"><h4>Child Tenant Details:</h4></div>
 						</div>
 						<div class="box-body">
 						<table class="table table-align-left profile-table-custom">
 							<tr>
-								<th>Child Tenant Name</th>
-								<th>Child Tenant Adhaar</th>
-								<th>Relation With Head Tenant</th>
+								<th width="33%">Child Tenant Name</th>
+								<th width="33%">Child Tenant Adhaar</th>
+								<th width="33%">Relation With Head Tenant</th>
 							</tr>
 							<tr>
 								<td>ssss ssss ss</td>
@@ -216,19 +218,19 @@
 						</div>
 					</div>
 					
-					</div>
+				</div>
 					
-					<div class="row">
+				<div class="row">
 					<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" style=""> 
 						<div class="box box-no-border">
 							<div class="box-header with-border">
-								<h4>Broker Details:</h4>
+								<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"><h4>Broker Details:</h4></div>
 							</div>
 							<table class="table table-align-left">
 							<tr>
-								<td><b>Broker Name</b><br>Rohit Jadhav</td>
-								<td style="word-break: break-all;"><b>Broker Contact Number</b><br>350 sadashive peth, pune 411000. near swargate.</td>
-								<td><b>Broker Adhaar Number</b><br>985050505012</td>
+								<td width="33%"><b>Broker Name</b><br>Rohit Jadhav</td>
+								<td style="word-break: break-all;width:33%"><b>Broker Contact Number</b><br>350 sadashive peth, pune 411000. near swargate.</td>
+								<td width="33%"><b>Broker Adhaar Number</b><br>985050505012</td>
 							</tr>
 							</table>
 						</div>

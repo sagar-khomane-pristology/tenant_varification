@@ -47,7 +47,7 @@
 	<div class="col-md-12">
 	<div class="box box-warning">
             <div class="box-header">
-              <h3 class="box-title">All Viewed Request</h3>
+              <h3 class="box-title">All Under Review Request</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body table-responsive" id="student-admission-data">

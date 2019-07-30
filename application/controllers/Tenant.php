@@ -26,8 +26,8 @@ class Tenant extends CI_Controller {
 	
 	public function viewed()
 	{
-           $data['title'] = "Viewed | Tenant Verification"; 
-           $data['main'] ="Viewed";
+           $data['title'] = "Under Review | Tenant Verification"; 
+           $data['main'] ="Under Review";
            $this->load->view('vViewed',$data);
           
 	}
