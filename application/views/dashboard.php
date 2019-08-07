@@ -124,6 +124,12 @@
 <script src="<?php echo base_url();?>assets/dist/js/Chart.min.js"></script>
 
 <script>
+	$( document ).ready(function() {
+		//$("#dashboard").removeClass('active');
+		$("#dashboard").addClass('active');
+	});
+</script>
+<script>
 new Chart(document.getElementById("bar-chart-grouped"), {
     type: 'bar',
     data: {

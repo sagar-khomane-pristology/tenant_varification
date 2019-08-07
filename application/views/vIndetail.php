@@ -31,15 +31,14 @@
 					
 				<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
 					<div class="box box-no-border" >
-					<div class="box-header with-border">
-							<div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"><h4>Owner Details:</h4></div>
-							<div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"><h4>Property Details:</h4></div>
-						</div>
-						
-						<div class="box-body">
-							<div class="row">
-							<div class="back-color1">
-								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+					
+							<div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"><div class="box-header with-border"><h4>Owner Details:</h4></div></div>
+							<div class="col-md-6 col-lg-6 col-xs-12 col-sm-12"><div class="box-header with-border"><h4>Property Details:</h4></div></div>
+						 
+						<div class="row">
+							<div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+							<div class="box-body">
+								<div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
 									<div class="row text-center">
 									<img class="profile-img-photo" id="myImgzoom" src="../../assets/dist/img/sample.png" alt="owner photo">
 									</div>
@@ -49,8 +48,8 @@
 									 <span class="text-margin-right">+91989898998</span>
 									</div>
 								</div>
-								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-									<table class="table table-align-left profile-table-custom ">
+								<div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+									<table class="table table-align-left profile-table-custom">
 									<tr>
 										<td style="word-break: break-all;"><b>Permenant Address</b><br>350 sadashive peth, pune 411000. near swargate 411404, 411411</td>
 									</tr>
@@ -64,7 +63,11 @@
 									</table>
 								</div>
 							</div>
-								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+							</div>
+							
+							<div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+							<div class="box-body">
+								<div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
 									<table class="table table-align-left profile-table-custom">
 									<tr>
 										<td style="word-break: break-all;"> <b>Police Station</b><br> abc police station wagholi pune</td>
@@ -79,7 +82,7 @@
 									</table>
 								</div>
 								
-								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+								<div class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
 									<table class="table table-align-left profile-table-custom">
 									<tr>
 										<td><b>Propert Type</b><br>XYZ abc</td>
@@ -102,140 +105,152 @@
 								</div>
 								
 							</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				</div>
+			</div>
 				
-				<div class="row"> 
-					<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+			<div class="row"> 
+				<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
 					<div class="box box-no-border">
-					<div class="box-header with-border">
-							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"><h4>Tenant Details:</h4></div>
-						</div>
-						<div class="box-body">
-							<div class="row">
-								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-									<div class="row text-center">
-									<img class="profile-img-photo" id="myImgzoom" src="../../assets/dist/img/sample.png" alt="owner photo">
+						<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"><div class="box-header with-border"><h4>Tenant Details:</h4></div></div>
+						
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+								<div class="box-body">
+									<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+										<div class="row text-center">
+										<img class="profile-img-photo" id="myImgzoom" src="../../assets/dist/img/sample.png" alt="owner photo">
+										</div>
+										<div class="row text-center">
+										 <span class="text-margin-right"><b>Rohit Jadhav</b></span><br>
+										 <span class="text-margin-right">tenant@ga.com</span><br>
+										 <span class="text-margin-right">+919850505050</span>
+										</div>
 									</div>
-									<div class="row text-center">
-									 <span class="text-margin-right"><b>Rohit Jadhav</b></span><br>
-									 <span class="text-margin-right">tenant@ga.com</span><br>
-									 <span class="text-margin-right">+919850505050</span>
+									<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+										<table class="table table-align-left profile-table-custom">
+										<tr>
+											<td style="word-break: break-all;"><b>Permenant Address</b><br>350 sadashive peth, pune 411000. near swargate 411404., </td>
+										</tr>
+										<tr>
+											<td><b>Date of birth</b><br>27-10-2019</td>
+										</tr>
+										<tr>
+											<td><b>Adhaar Number</b><br>524556451265 <button type="button" class="btn btn-default btn-xs">Download&nbsp;<i class="fa fa-download color-org"></i></button></td>
+										</tr>
+										<tr>
+											<td><b>Vehicle Number</b><br>MH 12 AD 5555</td>
+										</tr>
+										<tr>
+											<td><b>Tenant Occupation</b><br>abcd abcd </td>
+										</tr>
+										 
+										</table>
 									</div>
-								</div>
-								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-									<table class="table table-align-left profile-table-custom">
-									<tr>
-										<td style="word-break: break-all;"><b>Permenant Address</b><br>350 sadashive peth, pune 411000. near swargate 411404., </td>
-									</tr>
-									<tr>
-										<td><b>Date of birth</b><br>27-10-2019</td>
-									</tr>
-									<tr>
-										<td><b>Adhaar Number</b><br>524556451265 <button type="button" class="btn btn-default btn-xs">Download&nbsp;<i class="fa fa-download color-org"></i></button></td>
-									</tr>
-									<tr>
-										<td><b>Vehicle Number</b><br>MH 12 AD 5555</td>
-									</tr>
-									 <tr>
-										<td><b>Tenant Occupation</b><br>abcd abcd </td>
-									</tr>
-									 
-									</table>
-								</div>
-								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-									<table class="table table-align-left profile-table-custom">
-									<tr>
-										<td><b>Tenant Type</b><br>XYZ abc</td>
-									</tr>
+									<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+										<table class="table table-align-left profile-table-custom">
+										<tr>
+											<td><b>Tenant Type</b><br>XYZ abc</td>
+										</tr>
+										
+										<tr>
+											<td>350 sadashive peth, pune 411000. near swargate.</td>
+										</tr>
+										<tr>
+											<td><b>Reference Person 1 Name</b><br>ref1r ef1r ef1</td>
+										</tr>
+										<tr>
+											<td><b>Reference Person 2 Name</b><br>ref1r ef1r ef1</td>
+										</tr>
+										 
+										</table>
+									</div>
 									
-									<tr>
-										<td>350 sadashive peth, pune 411000. near swargate.</td>
-									</tr>
-									<tr>
-										<td><b>Reference Person 1 Name</b><br>ref1r ef1r ef1</td>
-									</tr>
-									<tr>
-										<td><b>Reference Person 2 Name</b><br>ref1r ef1r ef1</td>
-									</tr>
-									 
-									</table>
+									<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
+										<table class="table table-align-left profile-table-custom">
+										<tr>
+											<td><b>Tenant Occupation</b><br>abcd abcd vc abcd</td>
+										</tr>
+										<tr>
+											<td><b>Work Contact Number</b><br>2356897415 5<br><br></td>
+										</tr>
+										<tr>
+											<td><b>Reference Person 1 contact</b><br>1234589789</td>
+										</tr>
+										<tr>
+											<td><b>Reference Person 2 contact</b><br>1234589789</td>
+										</tr>
+										</table>
+									</div>
+									
 								</div>
-								
-								<div class="col-md-3 col-lg-3 col-xs-6 col-sm-6">
-									<table class="table table-align-left profile-table-custom">
-									<tr>
-										<td><b>Tenant Occupation</b><br>abcd abcd vc abcd</td>
-									</tr>
-									<tr>
-										<td><b>Work Contact Number</b><br>2356897415 5<br><br></td>
-									</tr>
-									<tr>
-										<td><b>Reference Person 1 contact</b><br>1234589789</td>
-									</tr>
-									<tr>
-										<td><b>Reference Person 2 contact</b><br>1234589789</td>
-									</tr>
-									</table>
-								</div>
-								
 							</div>
 						</div>
-						</div>
 					</div>
+				</div>
 					
-					</div>
+			</div>
 					
 					
 					
-				<div class="row"> 
-					<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+			<div class="row"> 
+				<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
 					<div class="box box-no-border">
-					<div class="box-header with-border">
-							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"><h4>Child Tenant Details:</h4></div>
-						</div>
-						<div class="box-body">
-						<table class="table table-align-left profile-table-custom">
-							<tr>
-								<th width="33%">Child Tenant Name</th>
-								<th width="33%">Child Tenant Adhaar</th>
-								<th width="33%">Relation With Head Tenant</th>
-							</tr>
-							<tr>
-								<td>ssss ssss ss</td>
-								<td>878787844545</td>
-								<td>child</td>
-							</tr>
-							<tr>
-								<td>ssss ssss ss</td>
-								<td>878787844545</td>
-								<td>child</td>
-							</tr>
-						</table>
-						</div>
-						</div>
-					</div>
 					
-				</div>
-					
-				<div class="row">
-					<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" style=""> 
-						<div class="box box-no-border">
-							<div class="box-header with-border">
-								<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"><h4>Broker Details:</h4></div>
+							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"><div class="box-header with-border"><h4>Child Tenant Details:</h4></div></div>
+						
+						
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+								<div class="box-body">
+								<table class="table table-align-left table-bordered">
+									<tr>
+										<th width="33%">Child Tenant Name</th>
+										<th width="33%">Child Tenant Adhaar</th>
+										<th width="33%">Relation With Head Tenant</th>
+									</tr>
+									<tr>
+										<td>ssss ssss ss</td>
+										<td>878787844545</td>
+										<td>child</td>
+									</tr>
+									<tr>
+										<td>ssss ssss ss</td>
+										<td>878787844545</td>
+										<td>child</td>
+									</tr>
+								</table>
+								</div>
 							</div>
-							<table class="table table-align-left">
-							<tr>
-								<td width="33%"><b>Broker Name</b><br>Rohit Jadhav</td>
-								<td style="word-break: break-all;width:33%"><b>Broker Contact Number</b><br>350 sadashive peth, pune 411000. near swargate.</td>
-								<td width="33%"><b>Broker Adhaar Number</b><br>985050505012</td>
-							</tr>
-							</table>
 						</div>
 					</div>
 				</div>
+					
+			</div>
+					
+			<div class="row">
+				<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"> 
+						<div class="box box-no-border">
+							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12"><div class="box-header with-border"><h4>Broker Details:</h4></div></div>
+							
+							<div class="row">
+							<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+								<div class="box-body">
+									<table class="table table-align-left table-bordered">
+									<tr>
+										<td width="33%"><b>Broker Name</b><br>Rohit Jadhav</td>
+										<td style="word-break: break-all;width:33%"><b>Broker Contact Number</b><br>350 sadashive peth, pune 411000. near swargate.</td>
+										<td width="33%"><b>Broker Adhaar Number</b><br>985050505012</td>
+									</tr>
+									</table>
+								</div>
+							</div>
+							</div>
+						</div>
+				</div>
+			</div>
 				<!--<div class="row">
 					<div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
 						<div class="box " style="border-top:0px ">
@@ -267,11 +282,12 @@
 	<?php $this->load->view('footer');?>
 	
 	<script>
-		/*$( document ).ready(function() {
-			$("#dashboard").removeClass('active');
-			$("#ss").addClass('active');
+		$( document ).ready(function() {
+			//$("#dashboard").removeClass('active');
+			$("#dashboard").addClass('active');
 		});
 		
+		/*
 		// Get the modal
 		var modal = document.getElementById("myModal_zoom");
 		// Get the image and insert it inside the modal - use its "alt" text as a caption_zoom

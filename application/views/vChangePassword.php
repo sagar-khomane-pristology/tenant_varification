@@ -75,7 +75,7 @@
  
  <script>
 $( document ).ready(function() {
-$("#dashboard").removeClass('active');
+//$("#dashboard").removeClass('active');
 $("#change-password").addClass('active');
 });
 

@@ -26,7 +26,7 @@ some changes test
 */
 
 
-$config['base_url'] = 'http://192.168.1.194/tenant_verification/';
+$config['base_url'] = 'http://192.168.1.52/tenant_verification/';
 
 
 /*
