@@ -145,7 +145,7 @@
 
 
  $( document ).ready(function() {
-    $("#parent-view-result").removeClass('active');
+    //$("#parent-view-result").removeClass('active');
     $("#teacher-attendance").addClass('active');
 });
 

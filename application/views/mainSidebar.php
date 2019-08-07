@@ -15,7 +15,8 @@
 	   <!-- Sidebar Menu -->  
       <ul class="sidebar-menu" data-widget="tree">
         <!-- Optionally, you can add icons to the links -->
-            <li class="active" id="dashboard"><a href="<?php echo base_url()?>Dashboard/"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+            <li class="" id="dashboard"><a href="<?php echo base_url()?>Dashboard/"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+           <li id="new-application"><a href="<?php echo base_url()?>Tenant/newApplication/"><i class="fa fa-fw fa-plus-square"></i> <span>New Application</span></a></li>
            <li id="new-request"><a href="<?php echo base_url()?>Tenant/newRequest/"><i class="fa fa-fw fa-plus-square"></i> <span>New Request</span></a></li>
            <li id="viewed-request"><a href="<?php echo base_url()?>Tenant/viewed/"><i class="fa fa-fw fa-eye"></i> <span>Under Review</span></a></li>
            <li id="verified-request"><a href="<?php echo base_url()?>Tenant/verified/"><i class="fa fa-fw fa-check-square-o"></i> <span>Verified</span></a></li>

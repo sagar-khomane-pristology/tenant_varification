@@ -276,7 +276,7 @@
  
 <script>
 $( document ).ready(function() {
-$("#dashboard").removeClass('active');
+//$("#dashboard").removeClass('active');
 $("#viewed-request").addClass('active');
 });
 	
